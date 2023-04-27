@@ -1,8 +1,9 @@
+Label
+CollisionShape2D
+Area2D
 Sprite2D
 Timer
-CollisionShape2D
 TileMap
-Area2D
 RemoteTransform2D
 Camera2D
 CharacterBody2D

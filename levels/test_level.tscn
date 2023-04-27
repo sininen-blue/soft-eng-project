@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://bd1cgqwba417s"]
+[gd_scene load_steps=6 format=3 uid="uid://bd1cgqwba417s"]
 
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="1_mnnh3"]
 [ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="2_nthsa"]
 [ext_resource type="PackedScene" uid="uid://dy3gbouhmwld8" path="res://Spikes/spikes.tscn" id="3_kvxr1"]
+[ext_resource type="PackedScene" uid="uid://ckn5osrv2mjl8" path="res://levels/scene_switcher.tscn" id="4_jnhlk"]
+[ext_resource type="PackedScene" uid="uid://cuklftugaftq7" path="res://levels/test_level_2.tscn" id="5_qb5sc"]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -20,3 +22,7 @@ position = Vector2(19, 140)
 
 [node name="Spikes" parent="." instance=ExtResource("3_kvxr1")]
 position = Vector2(177, 160)
+
+[node name="SceneSwitcher" parent="Spikes" instance=ExtResource("4_jnhlk")]
+position = Vector2(149, -23)
+next_level = ExtResource("5_qb5sc")

@@ -3,3 +3,6 @@ res://levels/tile_map.tscn
 res://levels/test_level.tscn
 res://Spikes/spikes.tscn
 res://Spikes.gd
+res://levels/scene_switcher.gd
+res://levels/scene_switcher.tscn
+res://levels/test_level_2.tscn

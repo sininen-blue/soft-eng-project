@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckn5osrv2mjl8"]
+
+[ext_resource type="Script" path="res://levels/scene_switcher.gd" id="1_pkvdy"]
+[ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="2_u5hwd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0nsc0"]
+
+[node name="SceneSwitcher" type="Area2D"]
+script = ExtResource("1_pkvdy")
+next_level = ExtResource("2_u5hwd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_0nsc0")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
