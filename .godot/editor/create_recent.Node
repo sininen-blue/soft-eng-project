@@ -1,5 +1,8 @@
-TileMap
 Sprite2D
+Timer
 CollisionShape2D
+TileMap
 Area2D
+RemoteTransform2D
+Camera2D
 CharacterBody2D

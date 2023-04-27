@@ -18,9 +18,9 @@ extends CharacterBody2D
 # raycast for tile detection
 
 var speed = 200
-var jump_force = 200
+var jump_force = 70
 var crouch_force = 200
-var gravity = 50
+var gravity = 70
 
 var slowed : bool = false
 
