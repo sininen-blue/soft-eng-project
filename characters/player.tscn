@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://bw5x3pp6ffwvi" path="res://assets/sprites/player.png" id="2_73a6r"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sdvgg"]
+radius = 7.0
+height = 22.0
 
 [node name="Player" type="CharacterBody2D"]
 texture_filter = 1

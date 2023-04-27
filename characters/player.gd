@@ -17,10 +17,10 @@ extends CharacterBody2D
 # particls
 # raycast for tile detection
 
-var speed = 200
-var jump_force = 70
-var crouch_force = 200
-var gravity = 70
+var speed = 150
+var jump_force = 200
+var crouch_force = 800
+var gravity = 400
 
 var slowed : bool = false
 
@@ -43,7 +43,7 @@ func _physics_process(delta):
 	collision_shape_2d.shape.radius = 10
 	if Input.is_action_pressed("crouch"):
 		velocity.y = velocity.y + crouch_force * delta
-		collision_shape_2d.shape.height = 20
+		collision_shape_2d.shape.height = 15
 	else:
 		collision_shape_2d.shape.height = 30
 	

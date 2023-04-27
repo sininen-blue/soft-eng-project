@@ -6,3 +6,4 @@ res://Spikes.gd
 res://levels/scene_switcher.gd
 res://levels/scene_switcher.tscn
 res://levels/test_level_2.tscn
+res://characters/player.gd

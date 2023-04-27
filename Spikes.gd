@@ -18,6 +18,8 @@ func ready():
 func _on_body_entered(body) -> void:
 	if body.name == "Player":
 		
+	#	get_tree().reload_current_scene()
+		
 		player = body
 		slow_down(body)
 		
