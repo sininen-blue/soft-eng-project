@@ -1,11 +1,11 @@
 Sprite2D
+CollisionShape2D
+Area2D
+RemoteTransform2D
+Camera2D
 PathFollow2D
 Path2D
 Label
-CollisionShape2D
-Area2D
 Timer
 TileMap
-RemoteTransform2D
-Camera2D
 CharacterBody2D
