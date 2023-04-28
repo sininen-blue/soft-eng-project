@@ -5,7 +5,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_visxf"]
 radius = 2.99933
-height = 11.9973
+height = 12.0395
 
 [node name="Spikes" type="Area2D"]
 texture_filter = 1
