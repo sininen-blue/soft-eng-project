@@ -1,8 +1,1 @@
-res://levels/test_level.tscn
-res://characters/player.tscn
-res://levels/tile_map.tscn
-res://Spikes/spikes.tscn
-res://levels/scene_switcher.tscn
-res://levels/test_level_2.tscn
 res://levels/test_level_3.tscn
-res://Spikes/Instakill_Spikes.tscn
