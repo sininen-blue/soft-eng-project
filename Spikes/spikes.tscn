@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dy3gbouhmwld8"]
+[gd_scene load_steps=4 format=3 uid="uid://w0vewcbo062o"]
 
-[ext_resource type="Script" path="res://Spikes.gd" id="1_x6sfm"]
+[ext_resource type="Script" path="res://Spikes/Spikes.gd" id="1_yorc0"]
 [ext_resource type="Texture2D" uid="uid://do0qdsj1n11s1" path="res://assets/sprites/small_spike.png" id="2_lesmm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_visxf"]
@@ -9,7 +9,7 @@ height = 12.0395
 
 [node name="Spikes" type="Area2D"]
 texture_filter = 1
-script = ExtResource("1_x6sfm")
+script = ExtResource("1_yorc0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.999999, -2)

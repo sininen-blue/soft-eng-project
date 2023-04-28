@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cuklftugaftq7"]
+[gd_scene load_steps=3 format=3 uid="uid://cuklftugaftq7"]
 
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="1_d5u4g"]
 [ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="2_itujb"]
-[ext_resource type="PackedScene" uid="uid://dy3gbouhmwld8" path="res://Spikes/spikes.tscn" id="3_5r7d2"]
 
 [node name="TestLevel2" type="Node2D"]
 
