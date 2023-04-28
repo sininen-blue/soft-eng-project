@@ -43,7 +43,7 @@ func _physics_process(delta):
 	collision_shape_2d.shape.radius = 10
 	if Input.is_action_pressed("crouch"):
 		velocity.y = velocity.y + crouch_force * delta
-		collision_shape_2d.shape.height = 10
+		collision_shape_2d.shape.height = 15
 	else:
 		collision_shape_2d.shape.height = 30
 	
