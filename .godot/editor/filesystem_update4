@@ -1,4 +1,5 @@
 res://characters/player.tscn
+res://characters/player.gd
 res://levels/tile_map.tscn
 res://levels/test_level.tscn
 res://Spikes/spikes.tscn

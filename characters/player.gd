@@ -24,15 +24,17 @@ var gravity = 400
 
 var slowed : bool = false
 
+var is_rolling : bool = true
+
 @onready var collision_shape_2d = $CollisionShape2D
 @onready var animation_player = $AnimationPlayer
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+
+func _input(event):
+	if event.is_action_pressed("restart"):
+		get_tree().reload_current_scene()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	handle_animations()
 	
@@ -40,10 +42,13 @@ func _physics_process(delta):
 	
 	velocity.x = speed
 	
+	# jump, still need to add variable jump height
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = -jump_force
 	
+	# roll
 	collision_shape_2d.shape.radius = 7
+	is_rolling = Input.is_action_pressed("crouch")
 	if Input.is_action_pressed("crouch"):
 		velocity.y = velocity.y + crouch_force * delta
 		collision_shape_2d.shape.height = 15
@@ -54,7 +59,10 @@ func _physics_process(delta):
 
 
 func handle_animations():
-	if !is_on_floor():
-		animation_player.play("jump")
+	if is_rolling:
+		animation_player.play("roll")
 	else:
-		animation_player.play("run")
+		if !is_on_floor():
+			animation_player.play("jump")
+		else:
+			animation_player.play("run")
