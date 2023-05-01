@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://bd1cgqwba417s"]
+[gd_scene load_steps=8 format=3 uid="uid://bd1cgqwba417s"]
 
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="1_mnnh3"]
 [ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="2_nthsa"]
 [ext_resource type="PackedScene" uid="uid://w0vewcbo062o" path="res://Spikes/spikes.tscn" id="3_kvxr1"]
 [ext_resource type="PackedScene" uid="uid://ckn5osrv2mjl8" path="res://levels/scene_switcher.tscn" id="4_jnhlk"]
 [ext_resource type="PackedScene" uid="uid://cuklftugaftq7" path="res://levels/test_level_2.tscn" id="5_qb5sc"]
-[ext_resource type="PackedScene" path="res://Spikes/Instakill_Spikes.tscn" id="6_ouu7k"]
+[ext_resource type="PackedScene" uid="uid://b0h4wgkkb74g5" path="res://Spikes/Instakill_Spikes.tscn" id="6_ouu7k"]
+[ext_resource type="PackedScene" uid="uid://dy65iarx8ho54" path="res://Spring.tscn" id="7_8rb77"]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -46,3 +47,8 @@ rotation = 6.2716
 [node name="InstakillSpikes" parent="." instance=ExtResource("6_ouu7k")]
 position = Vector2(1544, 153)
 rotation = -1.59804
+
+[node name="Spring" parent="." instance=ExtResource("7_8rb77")]
+position = Vector2(762, 149)
+
+[connection signal="body_entered" from="Spring" to="Player" method="_on_spring_body_entered"]
