@@ -21,7 +21,6 @@ var speed = 150
 var jump_force = 200
 var crouch_force = 800
 var gravity = 400
-var spring = -200
 
 var slowed : bool = false
 
@@ -29,6 +28,8 @@ var is_rolling : bool = true
 
 @onready var collision_shape_2d = $CollisionShape2D
 @onready var animation_player = $AnimationPlayer
+
+
 
 
 func _input(event):
@@ -69,5 +70,4 @@ func handle_animations():
 			animation_player.play("run")
 
 
-func _on_spring_body_entered(body):
-	velocity.y = spring
+

@@ -1,9 +1,11 @@
 extends Area2D
 
-func _physics_process(delta):
-	var bodies = get_overlapping_bodies()
-	for body in bodies:
-		if body.name == "Player":
-			$AnimationPlayer.play("activate")
-		else:
-			$AnimationPlayer.play("idle")
+var spring = -200
+
+@onready var animation_player = $AnimationPlayer
+
+
+func _on_body_entered(body):
+	if body.name == "Player":
+		body.velocity.y = spring
+		animation_player.play("activate")

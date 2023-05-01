@@ -55,6 +55,4 @@ position = Vector2(1544, 153)
 rotation = -1.59804
 
 [node name="Spring" parent="." instance=ExtResource("7_8rb77")]
-position = Vector2(762, 149)
-
-[connection signal="body_entered" from="Spring" to="Player" method="_on_spring_body_entered"]
+position = Vector2(665, 152)
