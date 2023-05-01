@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dy65iarx8ho54"]
+[gd_scene load_steps=8 format=3 uid="uid://citl78jlb6nrs"]
 
-[ext_resource type="Texture2D" uid="uid://c8a4tv8h65gn1" path="res://icon.svg" id="1_lqvmo"]
 [ext_resource type="Script" path="res://Spring.gd" id="1_pgoqb"]
+[ext_resource type="Texture2D" uid="uid://c8a4tv8h65gn1" path="res://icon.svg" id="2_1d820"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ndtj2"]
 
@@ -68,7 +68,7 @@ shape = SubResource("RectangleShape2D_ndtj2")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -1.19209e-07)
 scale = Vector2(0.125, 0.113281)
-texture = ExtResource("1_lqvmo")
+texture = ExtResource("2_1d820")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
