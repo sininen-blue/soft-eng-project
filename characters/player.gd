@@ -21,6 +21,7 @@ var speed = 150
 var jump_force = 200
 var crouch_force = 800
 var gravity = 400
+var spring = -200
 
 var slowed : bool = false
 
@@ -66,3 +67,7 @@ func handle_animations():
 			animation_player.play("jump")
 		else:
 			animation_player.play("run")
+
+
+func _on_spring_body_entered(body):
+	velocity.y = spring
