@@ -10,9 +10,14 @@
 [node name="test_stage_2" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_7tgq2")]
+position = Vector2(54, 2)
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position_smoothing_enabled = true
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+position = Vector2(130, -2)
+remote_path = NodePath("../../Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(184, 0)
 position_smoothing_speed = 3.0
 
 [node name="TileMap" parent="." instance=ExtResource("2_6qv47")]

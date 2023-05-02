@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://0cq3owrg7dn3"]
+[gd_scene load_steps=6 format=3 uid="uid://0cq3owrg7dn3"]
 
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="1_nl4uj"]
 [ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="2_ijvj5"]
 [ext_resource type="PackedScene" uid="uid://cxvcrtgcn0556" path="res://Spikes/moving_spike.tscn" id="3_fm5fx"]
+[ext_resource type="PackedScene" uid="uid://ckn5osrv2mjl8" path="res://levels/scene_switcher.tscn" id="4_313j5"]
 
 [sub_resource type="Curve2D" id="Curve2D_jjxc6"]
 _data = {
@@ -27,3 +28,6 @@ remote_path = NodePath("../../Camera2D")
 position = Vector2(105, -51)
 curve = SubResource("Curve2D_jjxc6")
 speed = 100.0
+
+[node name="SceneSwitcher" parent="." instance=ExtResource("4_313j5")]
+position = Vector2(4988, 56)
