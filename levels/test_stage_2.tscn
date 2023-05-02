@@ -30,7 +30,7 @@ position = Vector2(130, -2)
 remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(130, -2)
+position = Vector2(184, 0)
 position_smoothing_speed = 3.0
 
 [node name="TileMap" parent="." instance=ExtResource("2_6qv47")]
@@ -70,7 +70,6 @@ curve = SubResource("Curve2D_e5ch2")
 [node name="Moving Spike2" parent="." instance=ExtResource("6_1llrc")]
 position = Vector2(2115, 116)
 curve = SubResource("Curve2D_cxfak")
-duration = 1.0
 
 [node name="SceneSwitcher" parent="." instance=ExtResource("3_01nc6")]
 position = Vector2(3290, 235)
