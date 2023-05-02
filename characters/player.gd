@@ -44,9 +44,15 @@ func _physics_process(delta):
 	
 	velocity.x = speed
 	
-	# jump, still need to add variable jump height
+	
+	# jump
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = -jump_force
+	
+	var going_up = velocity.y < 0
+	var early_jump = velocity.y < jump_force/2
+	if Input.is_action_just_released("jump") and going_up and early_jump:
+		velocity.y = -jump_force/3
 	
 	# roll
 	collision_shape_2d.shape.radius = 7

@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cbs1ssoxtbden"]
+[gd_scene load_steps=6 format=3 uid="uid://cbs1ssoxtbden"]
 
 [ext_resource type="Texture2D" uid="uid://dlhh2jk4uw4nf" path="res://assets/sprites/tileset.png" id="1_o4ylq"]
+[ext_resource type="PackedScene" uid="uid://b3gbhm58dnnnt" path="res://Spikes/water.tscn" id="2_776s0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4xxcy"]
 texture = ExtResource("1_o4ylq")
@@ -208,9 +209,13 @@ texture = ExtResource("1_o4ylq")
 2:6/0/physics_layer_0/angular_velocity = 0.0
 2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -5.5, -8, -5.5)
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_k3pao"]
+scenes/1/scene = ExtResource("2_776s0")
+
 [sub_resource type="TileSet" id="TileSet_f0que"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_4xxcy")
+sources/1 = SubResource("TileSetScenesCollectionSource_k3pao")
 
 [node name="TileMap" type="TileMap"]
 texture_filter = 1

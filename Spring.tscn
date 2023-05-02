@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://citl78jlb6nrs"]
+[gd_scene load_steps=8 format=3 uid="uid://ciq3r5qlsbu55"]
 
 [ext_resource type="Script" path="res://Spring.gd" id="1_pgoqb"]
 [ext_resource type="Texture2D" uid="uid://b6d106qg1csq5" path="res://assets/sprites/spring.png" id="2_6008x"]
