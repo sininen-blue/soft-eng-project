@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=3 uid="uid://4gxwrsyypwie"]
+
+[ext_resource type="Script" path="res://Spikes/moving_spike_w_animation.gd" id="1_uuntd"]
+[ext_resource type="Texture2D" uid="uid://b124nc20ad0p8" path="res://assets/sprites/bird.png" id="2_mydwt"]
+[ext_resource type="Script" path="res://Spikes/Fly_Animation.gd" id="3_16wr3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7664h"]
+radius = 5.99997
+height = 25.9999
+
+[sub_resource type="Animation" id="Animation_trkvh"]
+resource_name = "Fly"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2i(0, 0), Vector2i(1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1286o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y0crx"]
+_data = {
+"Fly": SubResource("Animation_trkvh"),
+"RESET": SubResource("Animation_1286o")
+}
+
+[node name="Moving Spike w Animation" type="Path2D"]
+texture_filter = 1
+script = ExtResource("1_uuntd")
+
+[node name="MovingSpikeFollow" type="PathFollow2D" parent="."]
+loop = false
+
+[node name="SpikeArea" type="Area2D" parent="MovingSpikeFollow"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MovingSpikeFollow/SpikeArea"]
+position = Vector2(0, -2)
+rotation = 1.56748
+shape = SubResource("CapsuleShape2D_7664h")
+
+[node name="Sprite2D" type="Sprite2D" parent="MovingSpikeFollow/SpikeArea"]
+texture = ExtResource("2_mydwt")
+hframes = 2
+script = ExtResource("3_16wr3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MovingSpikeFollow/SpikeArea/Sprite2D"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_y0crx")
+}
+
+[connection signal="body_entered" from="MovingSpikeFollow/SpikeArea" to="." method="_on_spike_area_body_entered"]
