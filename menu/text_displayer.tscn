@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cepsqhlro8ch2"]
+
+[ext_resource type="Script" path="res://TextDisplayer.gd" id="1_b6yhg"]
+
+[node name="TextDisplayer" type="RichTextLabel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b6yhg")
+
+[node name="ms" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[connection signal="timeout" from="ms" to="." method="_on_ms_timeout"]
