@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dndjxagm64u" path="res://assets/sprites/moving_spike.png" id="2_y1ljq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_v5dgs"]
+radius = 6.0
 
 [node name="Moving Spike" type="Path2D"]
 texture_filter = 1

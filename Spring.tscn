@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b6d106qg1csq5" path="res://assets/sprites/spring.png" id="2_6008x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ndtj2"]
+size = Vector2(20, 9)
 
 [sub_resource type="Animation" id="Animation_kj1m3"]
 length = 0.001
@@ -112,6 +113,7 @@ texture_filter = 1
 script = ExtResource("1_pgoqb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5.5)
 shape = SubResource("RectangleShape2D_ndtj2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

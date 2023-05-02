@@ -1,13 +1,15 @@
 extends Path2D
 
 @onready var moving_spike_follow = $MovingSpikeFollow
-@export var duration : float = 2
+var duration : float = 2
 
-var speed : float = 200
+@export var speed : float = 200
+
 var final : int = 1
 
 func _ready():
 	moving_spike_follow.progress_ratio = 1
+	
 	var distance = moving_spike_follow.progress
 	duration = distance/speed
 	handle_tweening()
