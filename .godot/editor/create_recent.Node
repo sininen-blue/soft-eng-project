@@ -1,3 +1,7 @@
+Timer
+Label
+Control
+RichTextLabel
 Node
 AnimationPlayer
 Sprite2D
@@ -8,7 +12,5 @@ RemoteTransform2D
 Camera2D
 PathFollow2D
 Path2D
-Label
-Timer
 TileMap
 CharacterBody2D

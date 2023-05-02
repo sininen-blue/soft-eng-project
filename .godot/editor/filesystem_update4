@@ -8,3 +8,5 @@ res://Spikes/moving_spike.tscn
 res://menu/main_menu.tscn
 res://Spikes/Instakill_Spikes.tscn
 res://Spring.tscn
+res://menu/text_displayer.tscn
+res://menu/Timer2.tscn
