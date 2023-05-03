@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://sophk0kdty71"]
+[gd_scene load_steps=16 format=3 uid="uid://sophk0kdty71"]
 
 [ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="1_541vg"]
+[ext_resource type="PackedScene" uid="uid://ddsiy5fvb4eyp" path="res://levels/parallax_background_cave.tscn" id="1_jufej"]
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="2_4byk2"]
 [ext_resource type="PackedScene" uid="uid://b0h4wgkkb74g5" path="res://Spikes/Instakill_Spikes.tscn" id="3_dod5g"]
 [ext_resource type="PackedScene" uid="uid://cxvcrtgcn0556" path="res://Spikes/moving_spike.tscn" id="4_266oj"]
@@ -61,6 +62,8 @@ _data = {
 point_count = 2
 
 [node name="test_stage_2_2" type="Node2D"]
+
+[node name="ParallaxBackgroundCave" parent="." instance=ExtResource("1_jufej")]
 
 [node name="Player" parent="." instance=ExtResource("1_541vg")]
 

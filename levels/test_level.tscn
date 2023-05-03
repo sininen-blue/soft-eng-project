@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://bd1cgqwba417s"]
 
-[ext_resource type="PackedScene" path="res://levels/parallax_background.tscn" id="1_5ti04"]
+[ext_resource type="PackedScene" uid="uid://2ro0khul2c4e" path="res://levels/parallax_background.tscn" id="1_5ti04"]
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="1_mnnh3"]
 [ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="2_nthsa"]
 [ext_resource type="PackedScene" uid="uid://w0vewcbo062o" path="res://Spikes/spikes.tscn" id="3_kvxr1"]
