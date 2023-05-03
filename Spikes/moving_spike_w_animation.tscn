@@ -62,6 +62,7 @@ shape = SubResource("CapsuleShape2D_7664h")
 
 [node name="Sprite2D" type="Sprite2D" parent="MovingSpikeFollow/SpikeArea"]
 texture = ExtResource("2_mydwt")
+flip_v = true
 hframes = 2
 script = ExtResource("3_16wr3")
 

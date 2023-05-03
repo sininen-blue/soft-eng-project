@@ -1,5 +1,6 @@
 extends Path2D
 
+@onready var sprite = $MovingSpikeFollow/SpikeArea/Sprite2D
 @onready var moving_spike_follow = $MovingSpikeFollow
 var duration : float = 2
 
@@ -18,9 +19,11 @@ func _ready():
 func _process(_delta):
 	if moving_spike_follow.progress_ratio == 1:
 		final = 0
+		sprite.flip_h = false
 		handle_tweening()
 	elif moving_spike_follow.progress_ratio == 0:
 		final = 1
+		sprite.flip_h = true
 		handle_tweening()
 
 
