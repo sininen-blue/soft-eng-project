@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5dnt8poxe83v"]
+
+[ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="1_rb33u"]
+[ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="2_1xweh"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_rb33u")]
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+remote_path = NodePath("..")
+
+[node name="TileMap" parent="Player" instance=ExtResource("2_1xweh")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
