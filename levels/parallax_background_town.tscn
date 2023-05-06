@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://denauvum00rdm"]
+
+[ext_resource type="Texture2D" uid="uid://d3g04xd4y0sdi" path="res://assets/sprites/town-background1.png" id="1_xki5n"]
+[ext_resource type="Texture2D" uid="uid://dv81ybto8c62j" path="res://assets/sprites/town-background2.png" id="2_mbmmf"]
+[ext_resource type="Texture2D" uid="uid://c2nroxn7mp6y7" path="res://assets/sprites/town-background3.png" id="3_ukwog"]
+[ext_resource type="Texture2D" uid="uid://dvyq0wv2eaod4" path="res://assets/sprites/town-background4.png" id="4_bgoj8"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+scroll_base_scale = Vector2(1, 0)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+texture_filter = 1
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(640, 180)
+texture = ExtResource("1_xki5n")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+texture_filter = 1
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(640, 180)
+texture = ExtResource("2_mbmmf")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+texture_filter = 1
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(640, 180)
+texture = ExtResource("3_ukwog")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+texture_filter = 1
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(640, 180)
+texture = ExtResource("4_bgoj8")

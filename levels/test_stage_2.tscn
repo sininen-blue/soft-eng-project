@@ -1,12 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://buqkhuf2bbb1l"]
+[gd_scene load_steps=11 format=3 uid="uid://l34pbc2nvsbb"]
 
 [ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="1_7tgq2"]
+[ext_resource type="PackedScene" uid="uid://denauvum00rdm" path="res://levels/parallax_background_town.tscn" id="1_achty"]
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="2_6qv47"]
 [ext_resource type="PackedScene" uid="uid://ckn5osrv2mjl8" path="res://levels/scene_switcher.tscn" id="3_01nc6"]
-[ext_resource type="PackedScene" uid="uid://w0vewcbo062o" path="res://Spikes/spikes.tscn" id="4_8avhs"]
-[ext_resource type="PackedScene" uid="uid://b0h4wgkkb74g5" path="res://Spikes/Instakill_Spikes.tscn" id="5_0fh6c"]
-[ext_resource type="PackedScene" uid="uid://cxvcrtgcn0556" path="res://Spikes/moving_spike.tscn" id="6_1llrc"]
-[ext_resource type="PackedScene" uid="uid://sophk0kdty71" path="res://levels/test_stage_2_2.tscn" id="7_7rllx"]
+[ext_resource type="PackedScene" uid="uid://dy3gbouhmwld8" path="res://Spikes/spikes.tscn" id="4_8avhs"]
+[ext_resource type="PackedScene" path="res://Spikes/Instakill_Spikes.tscn" id="5_0fh6c"]
+[ext_resource type="PackedScene" path="res://Spikes/moving_spike.tscn" id="6_1llrc"]
+[ext_resource type="PackedScene" uid="uid://b8debk0oepdc2" path="res://levels/test_stage_2_2.tscn" id="7_7rllx"]
 
 [sub_resource type="Curve2D" id="Curve2D_e5ch2"]
 _data = {
@@ -22,15 +23,19 @@ point_count = 2
 
 [node name="test_stage_2" type="Node2D"]
 
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_achty")]
+
 [node name="Player" parent="." instance=ExtResource("1_7tgq2")]
 position = Vector2(54, 2)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
-position = Vector2(130, -2)
+position = Vector2(130, -30)
 remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(184, 0)
+position = Vector2(184, -28)
+limit_left = 0
+limit_smoothed = true
 position_smoothing_speed = 3.0
 
 [node name="TileMap" parent="." instance=ExtResource("2_6qv47")]
