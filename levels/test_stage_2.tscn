@@ -4,10 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://denauvum00rdm" path="res://levels/parallax_background_town.tscn" id="1_achty"]
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="2_6qv47"]
 [ext_resource type="PackedScene" uid="uid://ckn5osrv2mjl8" path="res://levels/scene_switcher.tscn" id="3_01nc6"]
-[ext_resource type="PackedScene" uid="uid://dy3gbouhmwld8" path="res://Spikes/spikes.tscn" id="4_8avhs"]
-[ext_resource type="PackedScene" path="res://Spikes/Instakill_Spikes.tscn" id="5_0fh6c"]
-[ext_resource type="PackedScene" path="res://Spikes/moving_spike.tscn" id="6_1llrc"]
-[ext_resource type="PackedScene" uid="uid://b8debk0oepdc2" path="res://levels/test_stage_2_2.tscn" id="7_7rllx"]
+[ext_resource type="PackedScene" uid="uid://w0vewcbo062o" path="res://Spikes/spikes.tscn" id="4_8avhs"]
+[ext_resource type="PackedScene" uid="uid://b0h4wgkkb74g5" path="res://Spikes/Instakill_Spikes.tscn" id="5_0fh6c"]
+[ext_resource type="PackedScene" uid="uid://cxvcrtgcn0556" path="res://Spikes/moving_spike.tscn" id="6_1llrc"]
+[ext_resource type="PackedScene" uid="uid://sophk0kdty71" path="res://levels/test_stage_2_2.tscn" id="7_7rllx"]
 
 [sub_resource type="Curve2D" id="Curve2D_e5ch2"]
 _data = {

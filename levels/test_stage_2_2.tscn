@@ -1,10 +1,10 @@
 [gd_scene load_steps=17 format=3 uid="uid://sophk0kdty71"]
 
 [ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="1_541vg"]
-[ext_resource type="PackedScene" path="res://levels/parallax_background_cave.tscn" id="1_jufej"]
+[ext_resource type="PackedScene" uid="uid://ddsiy5fvb4eyp" path="res://levels/parallax_background_cave.tscn" id="1_jufej"]
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="2_4byk2"]
-[ext_resource type="PackedScene" path="res://Spikes/Instakill_Spikes.tscn" id="3_dod5g"]
-[ext_resource type="PackedScene" path="res://Spikes/moving_spike.tscn" id="4_266oj"]
+[ext_resource type="PackedScene" uid="uid://b0h4wgkkb74g5" path="res://Spikes/Instakill_Spikes.tscn" id="3_dod5g"]
+[ext_resource type="PackedScene" uid="uid://cxvcrtgcn0556" path="res://Spikes/moving_spike.tscn" id="4_266oj"]
 [ext_resource type="PackedScene" uid="uid://ckn5osrv2mjl8" path="res://levels/scene_switcher.tscn" id="5_p168x"]
 [ext_resource type="PackedScene" uid="uid://dhmwqd6eodjh5" path="res://levels/test_stage_2_3.tscn" id="7_2a0hf"]
 
