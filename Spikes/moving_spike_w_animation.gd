@@ -4,11 +4,14 @@ extends Path2D
 @onready var moving_spike_follow = $MovingSpikeFollow
 var duration : float = 2
 
+@export var going_right : bool = false
 @export var speed : float = 200
 
 var final : int = 1
 
 func _ready():
+	$MovingSpikeFollow/SpikeArea/Sprite2D.flip_v = !going_right
+	
 	moving_spike_follow.progress_ratio = 1
 	
 	var distance = moving_spike_follow.progress
