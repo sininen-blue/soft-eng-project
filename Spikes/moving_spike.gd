@@ -8,6 +8,7 @@ var duration : float = 2
 var final : int = 1
 
 func _ready():
+	$AnimationPlayer.play("spin")
 	moving_spike_follow.progress_ratio = 1
 	
 	var distance = moving_spike_follow.progress

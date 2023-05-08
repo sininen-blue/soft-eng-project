@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://4gxwrsyypwie"]
+[gd_scene load_steps=8 format=3 uid="uid://cdrcmcgudjueo"]
 
 [ext_resource type="Script" path="res://Spikes/moving_spike_w_animation.gd" id="1_uuntd"]
 [ext_resource type="Texture2D" uid="uid://b124nc20ad0p8" path="res://assets/sprites/bird.png" id="2_mydwt"]
