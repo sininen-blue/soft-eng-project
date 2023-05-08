@@ -25,10 +25,14 @@ var gravity = 400
 var slowed : bool = false
 
 var is_rolling : bool = true
+var pressing_jump : bool = true
+
 
 @onready var collision_shape_2d = $CollisionShape2D
 @onready var animation_player = $AnimationPlayer
 
+@onready var coyote_timer = $CoyoteTimer
+@onready var jump_buffer_timer = $JumpBufferTimer
 
 
 
@@ -46,13 +50,30 @@ func _physics_process(delta):
 	
 	
 	# jump
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if is_on_floor():
+		coyote_timer.start()
+	if Input.is_action_just_pressed("jump"):
+		jump_buffer_timer.start()
+	pressing_jump = Input.is_action_pressed("jump")
+	
+	
+	if !coyote_timer.is_stopped() and !jump_buffer_timer.is_stopped() and pressing_jump:
+		coyote_timer.stop()
+		jump_buffer_timer.stop()
 		velocity.y = -jump_force
+		# this makes sure you can't full jump if you tap space fast enough
+	elif !coyote_timer.is_stopped() and !jump_buffer_timer.is_stopped() and !pressing_jump:
+		coyote_timer.stop()
+		jump_buffer_timer.stop()
+		velocity.y = -jump_force/3
+	
 	
 	var going_up = velocity.y < 0
 	var early_jump = velocity.y < jump_force/2
 	if Input.is_action_just_released("jump") and going_up and early_jump:
 		velocity.y = -jump_force/3
+	
+	
 	
 	# roll
 	collision_shape_2d.shape.radius = 7
