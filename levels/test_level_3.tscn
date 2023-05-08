@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://btl25lettnnsr"]
+[gd_scene load_steps=15 format=3 uid="uid://0cq3owrg7dn3"]
 
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="1_nl4uj"]
 [ext_resource type="PackedScene" path="res://levels/parallax_background.tscn" id="1_xfchb"]
@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://ckn5osrv2mjl8" path="res://levels/scene_switcher.tscn" id="4_313j5"]
 [ext_resource type="PackedScene" path="res://Spikes/Instakill_Spikes.tscn" id="4_tno36"]
 [ext_resource type="PackedScene" uid="uid://dy3gbouhmwld8" path="res://Spikes/spikes.tscn" id="5_8dloi"]
-[ext_resource type="PackedScene" path="res://levels/test_stage_2.tscn" id="5_x4x0t"]
-[ext_resource type="PackedScene" uid="uid://cdrcmcgudjueo" path="res://Spikes/moving_spike_w_animation.tscn" id="6_hp5me"]
+[ext_resource type="PackedScene" uid="uid://l34pbc2nvsbb" path="res://levels/test_stage_2.tscn" id="5_x4x0t"]
+[ext_resource type="PackedScene" path="res://Spikes/moving_spike_w_animation.tscn" id="6_hp5me"]
 [ext_resource type="PackedScene" path="res://Spring.tscn" id="7_oemf5"]
 
 [sub_resource type="Curve2D" id="Curve2D_24xvb"]
