@@ -1,15 +1,15 @@
 [gd_scene load_steps=14 format=3 uid="uid://cuklftugaftq7"]
 
-[ext_resource type="PackedScene" path="res://levels/parallax_background.tscn" id="1_6egyl"]
+[ext_resource type="PackedScene" uid="uid://2ro0khul2c4e" path="res://levels/parallax_background.tscn" id="1_6egyl"]
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="1_d5u4g"]
 [ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="2_itujb"]
-[ext_resource type="PackedScene" path="res://Spring.tscn" id="3_o8pu0"]
+[ext_resource type="PackedScene" uid="uid://ciq3r5qlsbu55" path="res://Spring.tscn" id="3_o8pu0"]
 [ext_resource type="PackedScene" uid="uid://ckn5osrv2mjl8" path="res://levels/scene_switcher.tscn" id="4_h3s6q"]
 [ext_resource type="PackedScene" uid="uid://0cq3owrg7dn3" path="res://levels/test_level_3.tscn" id="5_6b8bl"]
-[ext_resource type="PackedScene" path="res://Spikes/moving_spike.tscn" id="6_yylbl"]
-[ext_resource type="PackedScene" path="res://Spikes/Instakill_Spikes.tscn" id="7_7cdjn"]
-[ext_resource type="PackedScene" uid="uid://dy3gbouhmwld8" path="res://Spikes/spikes.tscn" id="8_7ok6a"]
-[ext_resource type="PackedScene" path="res://Spikes/moving_spike_w_animation.tscn" id="9_4jjxi"]
+[ext_resource type="PackedScene" uid="uid://cxvcrtgcn0556" path="res://Spikes/moving_spike.tscn" id="6_yylbl"]
+[ext_resource type="PackedScene" uid="uid://b0h4wgkkb74g5" path="res://Spikes/Instakill_Spikes.tscn" id="7_7cdjn"]
+[ext_resource type="PackedScene" uid="uid://w0vewcbo062o" path="res://Spikes/spikes.tscn" id="8_7ok6a"]
+[ext_resource type="PackedScene" uid="uid://4gxwrsyypwie" path="res://Spikes/moving_spike_w_animation.tscn" id="9_4jjxi"]
 
 [sub_resource type="Curve2D" id="Curve2D_xkc83"]
 _data = {

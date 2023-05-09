@@ -10,6 +10,6 @@
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("..")
 
-[node name="TileMap" parent="Player" instance=ExtResource("2_1xweh")]
-
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="TileMap" parent="." instance=ExtResource("2_1xweh")]
