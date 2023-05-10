@@ -247,7 +247,7 @@ position = Vector2(1957, 9)
 rotation = -1.57079
 
 [connection signal="body_entered" from="TileMap/Water" to="TileMap/Water" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@183486" to="TileMap/@Water@183486" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@183487" to="TileMap/@Water@183487" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@183488" to="TileMap/@Water@183488" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@183489" to="TileMap/@Water@183489" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Water@31945" to="TileMap/@Water@31945" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Water@31946" to="TileMap/@Water@31946" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Water@31947" to="TileMap/@Water@31947" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Water@31948" to="TileMap/@Water@31948" method="_on_body_entered" flags=18]
