@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="1_1dw3i"]
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="2_ol8w7"]
-[ext_resource type="PackedScene" uid="uid://cxvcrtgcn0556" path="res://Spikes/moving_spike.tscn" id="3_c3tiu"]
+[ext_resource type="PackedScene" uid="uid://b7dybx4o7fnfb" path="res://Spikes/moving_spike.tscn" id="3_c3tiu"]
 [ext_resource type="PackedScene" uid="uid://w0vewcbo062o" path="res://Spikes/spikes.tscn" id="3_oiy6q"]
 [ext_resource type="PackedScene" uid="uid://ckn5osrv2mjl8" path="res://levels/scene_switcher.tscn" id="5_pv4ay"]
 [ext_resource type="PackedScene" uid="uid://b0h4wgkkb74g5" path="res://Spikes/Instakill_Spikes.tscn" id="6_wiv42"]
@@ -245,9 +245,3 @@ position = Vector2(2347, -60)
 [node name="Area2D18" parent="." instance=ExtResource("6_wiv42")]
 position = Vector2(1957, 9)
 rotation = -1.57079
-
-[connection signal="body_entered" from="TileMap/Water" to="TileMap/Water" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@31945" to="TileMap/@Water@31945" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@31946" to="TileMap/@Water@31946" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@31947" to="TileMap/@Water@31947" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@31948" to="TileMap/@Water@31948" method="_on_body_entered" flags=18]
