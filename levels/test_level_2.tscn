@@ -127,3 +127,23 @@ position = Vector2(193, 0)
 
 [node name="Spikes6" parent="." instance=ExtResource("8_7ok6a")]
 position = Vector2(4388, 160)
+
+[node name="Moving Spike w Animation3" parent="." instance=ExtResource("9_4jjxi")]
+position = Vector2(4373.02, -146.224)
+curve = SubResource("Curve2D_q6bbd")
+
+[node name="Spikes7" parent="." instance=ExtResource("8_7ok6a")]
+position = Vector2(2408, 160)
+
+[node name="Moving Spike2" parent="." instance=ExtResource("6_yylbl")]
+position = Vector2(2233, 152)
+curve = SubResource("Curve2D_17ynj")
+speed = 100.0
+
+[node name="Moving Spike3" parent="." instance=ExtResource("6_yylbl")]
+position = Vector2(1162, 136)
+curve = SubResource("Curve2D_qky07")
+
+[node name="Area2D6" parent="." instance=ExtResource("7_7cdjn")]
+position = Vector2(3196, 137)
+rotation = -1.54403
