@@ -32,7 +32,8 @@ var is_rolling : bool = true
 @onready var death_menu = $DeathMenu
 
 
-
+func _ready():
+	Engine.time_scale = 1
 
 func _input(event):
 	if event.is_action_pressed("restart"):
