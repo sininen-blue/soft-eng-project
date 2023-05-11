@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://do8ki5osrtpwv"]
+
+[ext_resource type="PackedScene" uid="uid://cqa0w8ndfylhq" path="res://Dead Menu/control.tscn" id="1_cnlgw"]
+
+[node name="DeathMenu" type="CanvasLayer"]
+
+[node name="Game Over Screen" parent="." instance=ExtResource("1_cnlgw")]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://chfnnyx64saq3"]
+[gd_scene load_steps=4 format=3 uid="uid://cqa0w8ndfylhq"]
 
 [ext_resource type="FontFile" uid="uid://dl8vjcysqthgu" path="res://assets/fonts/HopeGold.ttf" id="1_82rga"]
 [ext_resource type="Script" path="res://Dead Menu/control.gd" id="1_dn4og"]

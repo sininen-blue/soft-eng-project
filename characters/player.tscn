@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://dsjovb7f18qh8"]
+[gd_scene load_steps=10 format=3 uid="uid://dsjovb7f18qh8"]
 
 [ext_resource type="Script" path="res://characters/player.gd" id="1_t6lvq"]
 [ext_resource type="Texture2D" uid="uid://bw5x3pp6ffwvi" path="res://assets/sprites/player.png" id="2_73a6r"]
+[ext_resource type="PackedScene" uid="uid://do8ki5osrtpwv" path="res://Dead Menu/death_menu.tscn" id="3_uu36b"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sdvgg"]
 radius = 7.0
@@ -202,3 +203,6 @@ one_shot = true
 [node name="JumpBufferTimer" type="Timer" parent="."]
 wait_time = 0.15
 one_shot = true
+
+[node name="DeathMenu" parent="." instance=ExtResource("3_uu36b")]
+visible = false
