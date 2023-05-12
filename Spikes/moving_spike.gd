@@ -27,7 +27,7 @@ func _process(_delta):
 
 func _on_spike_area_body_entered(body):
 	if body.name == "Player":
-		body.kill()
+		get_tree().reload_current_scene()
 
 
 func handle_tweening():
