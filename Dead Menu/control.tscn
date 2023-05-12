@@ -1,0 +1,76 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqa0w8ndfylhq"]
+
+[ext_resource type="FontFile" uid="uid://dl8vjcysqthgu" path="res://assets/fonts/HopeGold.ttf" id="1_82rga"]
+[ext_resource type="Script" path="res://Dead Menu/control.gd" id="1_dn4og"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_noucq"]
+font = ExtResource("1_82rga")
+font_size = 50
+
+[node name="Game Over Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dn4og")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.494
+anchor_top = 0.486
+anchor_right = 0.494
+anchor_bottom = 0.486
+offset_left = -66.16
+offset_top = -91.96
+offset_right = 65.84
+offset_bottom = -65.96
+grow_horizontal = 2
+grow_vertical = 2
+text = "YOU DIED! IDIOT!"
+label_settings = SubResource("LabelSettings_noucq")
+
+[node name="RetryButton" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.0
+offset_top = -43.0
+offset_right = 49.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_82rga")
+theme_override_font_sizes/font_size = 30
+text = "RETRY"
+
+[node name="QuitButton" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.0
+offset_top = 18.0
+offset_right = 48.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_82rga")
+theme_override_font_sizes/font_size = 30
+text = "QUIT"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(320, 180)
+
+[connection signal="pressed" from="RetryButton" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

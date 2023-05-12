@@ -1,4 +1,4 @@
-extends Area2D
+extends Control
 
 
 # Called when the node enters the scene tree for the first time.
@@ -11,6 +11,9 @@ func _process(delta):
 	pass
 
 
-func _on_body_entered(body):
-	if body.name == "Player":
-		body.kill()
+func _on_retry_button_pressed():
+	get_tree().reload_current_scene()
+
+
+func _on_quit_button_pressed():
+	get_tree().quit()

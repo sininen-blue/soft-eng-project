@@ -29,8 +29,11 @@ var is_rolling : bool = true
 @onready var collision_shape_2d = $CollisionShape2D
 @onready var animation_player = $AnimationPlayer
 
+@onready var death_menu = $DeathMenu
 
 
+func _ready():
+	Engine.time_scale = 1
 
 func _input(event):
 	if event.is_action_pressed("restart"):
@@ -77,3 +80,13 @@ func handle_animations():
 
 
 
+func kill():
+	# add screen shake
+	# add particles
+	# add death animations
+	# add flickering
+	death_menu.visible = true
+	Engine.time_scale = 0.2
+	speed = 0
+	gravity = 0
+	jump_force = 0
