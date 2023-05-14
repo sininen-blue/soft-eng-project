@@ -33,7 +33,7 @@ var is_rolling : bool = true
 func _ready():
 	Engine.time_scale = 1
 	
-	$RemoteTransform2D.position = Vector2(130, -30)
+	$RemoteTransform2D.position = Vector2(130, -60)
 	
 	$DeathMenu.visible = false
 
