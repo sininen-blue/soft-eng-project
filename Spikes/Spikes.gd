@@ -9,16 +9,12 @@ var slow_timer = null
 
 var player
 
-func ready():
-	pass
-
-
 
 
 func _on_body_entered(body) -> void:
 	if body.name == "Player":
 		
-	#	get_tree().reload_current_scene()
+		$SlowedSound.play()
 		
 		player = body
 		slow_down(body)

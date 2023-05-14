@@ -29,6 +29,9 @@ var is_rolling : bool = true
 @onready var collision_shape_2d = $CollisionShape2D
 @onready var animation_player = $AnimationPlayer
 
+@onready var jump_sound = $JumpSound
+@onready var death_sound = $DeathSound
+
 
 func _ready():
 	Engine.time_scale = 1
@@ -53,6 +56,8 @@ func _physics_process(delta):
 	
 	# jump
 	if Input.is_action_just_pressed("jump") and is_on_floor():
+		jump_sound.play()
+		
 		velocity.y = -jump_force
 	
 	var going_up = velocity.y < 0
@@ -83,5 +88,6 @@ func handle_animations():
 
 
 func kill():
+	death_sound.play()
 	$DeathMenu.visible = true
 	Engine.time_scale = 0

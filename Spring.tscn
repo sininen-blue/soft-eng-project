@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://ciq3r5qlsbu55"]
+[gd_scene load_steps=9 format=3 uid="uid://ciq3r5qlsbu55"]
 
 [ext_resource type="Script" path="res://Spring.gd" id="1_pgoqb"]
 [ext_resource type="Texture2D" uid="uid://b6d106qg1csq5" path="res://assets/sprites/spring.png" id="2_6008x"]
+[ext_resource type="AudioStream" uid="uid://crj2ii3slam3t" path="res://assets/sounds/jump.wav" id="3_2od47"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ndtj2"]
 size = Vector2(20, 9)
@@ -124,5 +125,8 @@ hframes = 3
 libraries = {
 "": SubResource("AnimationLibrary_1e752")
 }
+
+[node name="SpringSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_2od47")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
