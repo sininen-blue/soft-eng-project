@@ -30,6 +30,12 @@ var is_rolling : bool = true
 @onready var animation_player = $AnimationPlayer
 
 
+func _ready():
+	Engine.time_scale = 1
+	
+	$RemoteTransform2D.position = Vector2(130, -30)
+	
+	$DeathMenu.visible = false
 
 
 func _input(event):
@@ -76,4 +82,6 @@ func handle_animations():
 			animation_player.play("run")
 
 
-
+func kill():
+	$DeathMenu.visible = true
+	Engine.time_scale = 0
