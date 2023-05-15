@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c5dnt8poxe83v"]
+[gd_scene load_steps=10 format=3 uid="uid://c5dnt8poxe83v"]
 
 [ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="1_rb33u"]
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="2_1xweh"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b0h4wgkkb74g5" path="res://Spikes/Instakill_Spikes.tscn" id="5_crwss"]
 [ext_resource type="PackedScene" uid="uid://ckn5osrv2mjl8" path="res://levels/scene_switcher.tscn" id="5_kpipy"]
 [ext_resource type="PackedScene" uid="uid://ciq3r5qlsbu55" path="res://Spring.tscn" id="6_3qjrt"]
+[ext_resource type="PackedScene" uid="uid://oqj03gsbek78" path="res://menu/end_scene.tscn" id="6_8g1sc"]
 [ext_resource type="PackedScene" uid="uid://curnao6yle5ms" path="res://levels/parallax_background_city.tscn" id="8_x8gwo"]
 
 [node name="Stage3Level3" type="Node2D"]
@@ -38,6 +39,7 @@ position = Vector2(2179, 190)
 
 [node name="SceneSwitcher" parent="Spikes2" instance=ExtResource("5_kpipy")]
 position = Vector2(787, -67)
+next_level = ExtResource("6_8g1sc")
 
 [node name="Area2D" parent="." instance=ExtResource("5_crwss")]
 position = Vector2(773, 217)
