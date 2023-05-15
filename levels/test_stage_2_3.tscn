@@ -249,9 +249,3 @@ position = Vector2(2347, -60)
 [node name="Area2D18" parent="." instance=ExtResource("6_wiv42")]
 position = Vector2(1957, 9)
 rotation = -1.57079
-
-[connection signal="body_entered" from="TileMap/Water" to="TileMap/Water" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@83589" to="TileMap/@Water@83589" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@83590" to="TileMap/@Water@83590" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@83591" to="TileMap/@Water@83591" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@83592" to="TileMap/@Water@83592" method="_on_body_entered" flags=18]
