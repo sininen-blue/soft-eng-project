@@ -70,7 +70,7 @@ theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_fonts/font = ExtResource("2_3cy2s")
 theme_override_font_sizes/font_size = 64
-text = "Video Game"
+text = "Robert's Adventure"
 horizontal_alignment = 1
 vertical_alignment = 1
 
