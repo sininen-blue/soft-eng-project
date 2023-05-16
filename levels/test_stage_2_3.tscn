@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://dhmwqd6eodjh5"]
+[gd_scene load_steps=25 format=3 uid="uid://dhmwqd6eodjh5"]
 
 [ext_resource type="PackedScene" uid="uid://dsjovb7f18qh8" path="res://characters/player.tscn" id="1_1dw3i"]
 [ext_resource type="PackedScene" uid="uid://cbs1ssoxtbden" path="res://levels/tile_map.tscn" id="2_ol8w7"]
@@ -93,12 +93,6 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 224.391, -179.341, 0, 0, 0, 0, 238.391, 122.659, 0, 0, 0, 0, 238.391, 123.659, 0, 0, 0, 0, 2912.39, 124.659)
 }
 point_count = 4
-
-[sub_resource type="Curve2D" id="Curve2D_hpofg"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, -284, 19, 0, 0, 0, 0, 369, 22)
-}
-point_count = 2
 
 [sub_resource type="Curve2D" id="Curve2D_2a5rp"]
 _data = {
@@ -263,16 +257,12 @@ position = Vector2(2347, -60)
 position = Vector2(1957, 9)
 rotation = -1.57079
 
-[node name="Moving Spike15" parent="." instance=ExtResource("3_c3tiu")]
-position = Vector2(4427, -21)
-curve = SubResource("Curve2D_hpofg")
-
 [node name="Moving Spike16" parent="." instance=ExtResource("3_c3tiu")]
 position = Vector2(5981, -18)
 curve = SubResource("Curve2D_2a5rp")
 
-[connection signal="body_entered" from="TileMap/@Water@266493" to="TileMap/@Water@266493" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@266494" to="TileMap/@Water@266494" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@266495" to="TileMap/@Water@266495" method="_on_body_entered" flags=18]
 [connection signal="body_entered" from="TileMap/Water" to="TileMap/Water" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="TileMap/@Water@266516" to="TileMap/@Water@266516" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Water@25388" to="TileMap/@Water@25388" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Water@25389" to="TileMap/@Water@25389" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Water@25390" to="TileMap/@Water@25390" method="_on_body_entered" flags=18]
+[connection signal="body_entered" from="TileMap/@Water@25391" to="TileMap/@Water@25391" method="_on_body_entered" flags=18]
